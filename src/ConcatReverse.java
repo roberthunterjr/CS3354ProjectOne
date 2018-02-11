@@ -23,10 +23,18 @@ public class ConcatReverse {
         int strlength = input.length();
         if(strlength >= 2) {
             newString[0] = input.substring(0,(strlength/2));
-            newString[1] = input.substring((strlength/2 + 1),strlength);
+            newString[1] = input.substring((strlength/2),strlength);
         } else {
             newString[0] = input;
+            newString[1] = "";
         }
         return newString;
+    }
+
+    public static String runRevCon(String input) {
+        String[] strSplit = splitString(input);
+        String strA = reverseString(strSplit[0]);
+        String strB = reverseString(strSplit[1]);
+        return strA + strB;
     }
 }
