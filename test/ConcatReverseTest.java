@@ -8,7 +8,6 @@ class ConcatReverseTest {
 
     @org.junit.jupiter.api.Test
     void reverseString() {
-        System.out.println("Testing the Reverse String Method....");
         String str1 = "";
         String str2 = "a";
         String str3 = "Hello There";
@@ -18,13 +17,11 @@ class ConcatReverseTest {
         assertEquals("",res1, "Should handle empty strings");
         assertEquals("a",res2, "Should handle strings with single char");
         assertEquals("erehT olleH", res3, "Should handle multi-char strings with Spaces");
-        System.out.println("Reverse String Method Testing Complete");
 
     }
 
     @org.junit.jupiter.api.Test
     void splitString() {
-        System.out.println("Testing the splitString Method....");
         String str1 = "";
         String str2 = "a";
         String str3 = "Hello There";
@@ -40,12 +37,11 @@ class ConcatReverseTest {
         assertEquals(" There",res3[1]);
         assertEquals("abc", res4[0]);
         assertEquals("123", res4[1]);
-        System.out.println("splitString Method Testing Complete....");
     }
 
     @Test
     void runRevCon() {
-        System.out.println("Testing the runRevCon Method...");
+        System.out.println("\nTesting the Reverse Concatenate Method...\n");
         String str1 = "";
         String str2 = "a";
         String str3 = "abc123";
@@ -59,6 +55,5 @@ class ConcatReverseTest {
         assertEquals("a", res2);
         assertEquals("cba321", res3);
         assertEquals("olleHerehT ", res4);
-        System.out.println("runRevCon Method Testing Complete...");
     }
 }

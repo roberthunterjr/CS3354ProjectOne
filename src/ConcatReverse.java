@@ -8,7 +8,6 @@ public class ConcatReverse {
     public static void main (String[] args) {
         System.out.println("Hello There");
         String userInput = MyUtil.getInput("Please enter your string");
-        System.out.println("This is the string in reverse\n" + reverseString(userInput));
     }
 
     public static String reverseString(String input) {
@@ -32,10 +31,17 @@ public class ConcatReverse {
         return newString;
     }
 
+    /**
+     * This function takes an input string, splits it in half and reverses each
+     * halve before concatenating
+     * @param input String: The string to be split, reversed and concatenated
+     * @return String: the concatenated string
+     */
     public static String runRevCon(String input) {
         String[] strSplit = splitString(input);
         String strA = reverseString(strSplit[0]);
         String strB = reverseString(strSplit[1]);
+        System.out.println("This is the string \'"+input+"\'in reverse\n\'" + strA + strB+"\'");
         return strA + strB;
     }
 }

@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class NRowSumTest {
 
     NRowSum nTest = new NRowSum();
-
     @Test
     void getInt() {
+        System.out.println("\nTesting the NRowSum:\n");
         assertEquals(3, nTest.getInt(1));
         assertEquals(18, nTest.getInt(2));
         assertEquals(57, nTest.getInt(3));
