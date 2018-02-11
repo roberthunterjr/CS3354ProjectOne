@@ -7,7 +7,8 @@ public class ConcatReverse {
 
     public static void main (String[] args) {
         System.out.println("Hello There");
-        System.out.println("This is the string" + reverseString("Hello!"));
+        String userInput = MyUtil.getInput("Please enter your string");
+        System.out.println("This is the string in reverse\n" + reverseString(userInput));
     }
 
     public static String reverseString(String input) {
